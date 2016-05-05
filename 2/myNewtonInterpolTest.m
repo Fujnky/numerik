@@ -28,13 +28,13 @@ for n=[7 12 17]
     x_e, evalNewton(x_e, x_cheby, c_cheby), 'b-',
     x_equidist, runge(x_equidist), 'r*',
     x_cheby, runge(x_cheby), 'b*');
-  saveas(n, ["PA2-1-N" num2str(n) ".fig"]);
+  saveas(n, ['PA2-1-N' num2str(n) '.fig']);
   clf()
 
   m = 100;
   j = 0:m;
   delta = -1 + 2*j./m;
-  disp(["Maximum error for n=" num2str(n)])
+  disp(['Maximum error for n=' num2str(n)])
   equidistant = max(abs(runge(delta) - evalNewton(delta, x_equidist, c_equidist)))
   chebyshev = max(abs(runge(delta) - evalNewton(delta, x_cheby, c_cheby)))
 
