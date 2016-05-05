@@ -1,3 +1,5 @@
+*.png
+*.fig
 octave-workspace
 
 # Compiled Object files
