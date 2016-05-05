@@ -17,14 +17,15 @@ double approximate(double argument, int iterations) {
 }
 
 int main() {
+  cout << "a)" << endl;
   for(int i = 3; i <= 30; i+=3) {
     cout << std::setprecision(12) << std::setw(20)  << approximate(-5.5, i) << endl;
   }
-  cout << endl;
+  cout << "b)" << endl;
   for(int i = 3; i <= 30; i+=3) {
     cout << std::setprecision(12) << std::setw(20)  << 1/approximate(5.5, i) << endl;
   }
-  cout << endl;
+  cout << "c)" << endl;
   for(int i = 3; i <= 30; i+=3) {
     cout << std::setprecision(12) << std::setw(20)  << pow(approximate(-0.5, i), 11) << endl;
   }

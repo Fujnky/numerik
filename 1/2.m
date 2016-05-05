@@ -1,0 +1,6 @@
+x = single(0.8:5e-5:1.2)
+figure(1)
+plot(x, (x-1).^7, 'r-')
+figure(2)
+plot(x, ((((((x-7).*x+21).*x-35).*x+35).*x-21).*x+7).*x-1, 'b-')
+pause()
