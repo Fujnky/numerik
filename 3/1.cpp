@@ -9,7 +9,7 @@ double f(double x) {
 }
 
 double myQuadratur1D(double (*f)(double), valarray<double>& w, valarray<double>& p) {
-  //calculate b-a and multiplay weights
+  //calculate b-a and multiply weights
   w *= p[p.size()-1] - p[0];
 
   //multiply weights with function values and sum up
